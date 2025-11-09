@@ -4,7 +4,7 @@
 2. Ejecutar:  
    `uvicorn api_rest:app --host 0.0.0.0 --port 8000 --reload`
 
-### 🗄️ Base de datos
+## 🗄️ Base de datos
 
 El proyecto usa **PostgreSQL**.  
 Para probar la API localmente, crear una base de datos llamada `plan_listas` y configurar las variables de entorno en un archivo `.env` con los siguientes campos:
