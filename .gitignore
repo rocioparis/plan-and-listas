@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# Android / Kotlin
+*.iml
+.gradle/
+build/
+.idea/
+local.properties
+.DS_Store
