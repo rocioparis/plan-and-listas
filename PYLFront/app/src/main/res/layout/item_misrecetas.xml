@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/bg_card_receta"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/ivRecetaItemMR"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvNombreRecetaItemMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nombre de la receta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="4dp">
+
+        <Button
+            android:id="@+id/btnPlanificarItemMR"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/PL_planificarALT"
+            android:background="@drawable/bg_button_rounded"
+            android:backgroundTint="@color/accept"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>

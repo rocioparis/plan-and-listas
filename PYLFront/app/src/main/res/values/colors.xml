@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--  -->
+    <color name="disclaimer_color">#FF0000</color>
+    <color name="primary">#79F6D9</color>
+    <color name="primary_dark">#009688</color>
+    <color name="accent">#03A9F4</color>
+    <color name="cancel">#FFDADA</color>
+    <color name="accept">#DDFFDE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="secondaryText">#414141</color>
+
+    <!-- Ingreso -->
+    <color name="IGO_bgBtnLogin">#EBFFD2</color>
+    <color name="IGO_bgBtnRegister">#BAF1F8</color>
+    <color name="IGO_bgBtnNoAcc">#333333</color>
+
+    <!-- Registro -->
+    <color name="RG_etbackground">#FFD8D8</color>
+
+    <!-- Cuestionario -->
+    <color name="CS_pregunta1">#BAEEF4</color>
+    <color name="CS_pregunta2">#DBF2C1</color>
+    <color name="CS_pregunta3">#C5F8C7</color>
+
+    <!-- Pantalla de inicio -->
+    <color name="PI_background">#CAFAFF</color>
+
+    <!-- Recetas -->
+    <color name="RC_etbackground">#FAD5E9</color>
+
+    <!-- Planificación -->
+    <color name="PL_etbackground">#C5E9F8</color>
+    <color name="muybaja">#FF4545</color>
+    <color name="baja">#FFC2C2</color>
+    <color name="media">#FFF5B0</color>
+    <color name="alta">#E0FFBE</color>
+    <color name="muyalta">#B6FF56</color>
+
+    <!-- Listas de compras -->
+    <color name="LC_background">#EAFFD4</color>
+    <color name="LC_header_background">#C3D7AB</color>
+    <color name="LC_etbackground">#D9FFCA</color>
+</resources>

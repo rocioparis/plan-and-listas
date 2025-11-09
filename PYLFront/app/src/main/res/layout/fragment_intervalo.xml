@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_rounded"
+    android:backgroundTint="@color/LC_background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitleIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/LC_titleIV"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvInstruccionesIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:justificationMode="inter_word"
+        android:text="@string/LC_instrIV"
+        android:textColor="@color/secondaryText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/LC_fiIV"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etFechaInicioIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:backgroundTint="@color/LC_etbackground"
+        android:focusable="false"
+        android:hint="@string/LC_hintFIIV"
+        android:inputType="none"
+        android:padding="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/LC_ffIV"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etFechaFinalIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:backgroundTint="@color/LC_etbackground"
+        android:focusable="false"
+        android:hint="@string/LC_hintFFIV"
+        android:inputType="none"
+        android:padding="12dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelarIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_button_rounded_delete"
+            android:backgroundTint="@color/cancel"
+            android:text="@string/btnCancelar"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnAceptarIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_rounded"
+            android:backgroundTint="@color/accept"
+            android:text="@string/btnAceptar"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

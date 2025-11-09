@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navInicio"
+        android:icon="@drawable/va_inicio"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/navRecetas"
+        android:icon="@drawable/va_misrecetas"
+        android:title="Mis recetas" />
+
+    <item
+        android:id="@+id/navListas"
+        android:icon="@drawable/va_mislistas"
+        android:title="Mis listas" />
+</menu>

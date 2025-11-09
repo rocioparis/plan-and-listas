@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnLogout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="6dp"
+    android:padding="12dp"
+    android:gravity="end|center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_rounded"
+            android:backgroundTint="@color/cancel"
+            android:paddingVertical="10dp"
+            android:textSize="13sp"
+            android:paddingHorizontal="5dp"
+            android:textStyle="bold"
+            android:text="@string/IGO_logout"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+</LinearLayout>

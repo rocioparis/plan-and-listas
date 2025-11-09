@@ -1,0 +1,251 @@
+<resources>
+    <!-- Globales -->
+    <string name="app_name">"PlanListas"</string>
+    <string name="disclaimer">"ADVERTENCIA: Esta aplicación no ofrece ni reemplaza asesoramiento nutricional. Se recomienda consultar a un profesional de la salud antes de consumir determinada receta o adoptar hábitos alimenticios."</string>
+    <string name="btnOK">"OK"</string>
+    <string name="btnCancelar">"Cancelar"</string>
+    <string name="btnAceptar">"Aceptar"</string>
+    <string name="btnGuardar">"Guardar"</string>
+    <string name="btnSalir">"Salir"</string>
+    <string name="btnModificar">"Modificar"</string>
+    <string name="btnEliminar">"Eliminar"</string>
+
+    <!-- Errores -->
+    <string name="camposvacios">"Hay campos obligatorios vacíos"</string>
+    <string name="userinvalido">"Formato de usuario inválido"</string>
+    <string name="fechaMinima">"01/01/1925"</string>
+    <string name="fechaMaxima">"01/01/2007"</string>
+    <string name="fecharango">"Fecha fuera del rango"</string>
+    <string name="fechainvalida">"Formato de fecha inválido"</string>
+    <string name="passinvalida">"Formato de contraseña inválido"</string>
+    <string name="passdiferentes">"Las contraseñas no coinciden"</string>
+    <string name="unknownError">"Error desconocido"</string>
+    <string name="error">"Error"</string>
+    <string name="userorpassinc">"Usuario o contraseña incorrectos"</string>
+    <string name="errorcon">"Error de conexión al servidor"</string>
+    <string name="opcionesvacias">"Por favor, seleccione al menos una opción"</string>
+    <string name="dragdropinv">"Por favor, seleccione un día del calendario antes de soltar"</string>
+    <string name="bqdavacia">"Por favor, escriba algo para buscar"</string>
+    <string name="recetasnotfound">"Error al cargar recetas"</string>
+    <string name="errorplan">"Error al planificar la receta"</string>
+    <string name="ambasfechas">"Por favor, seleccione ambas fechas"</string>
+    <string name="errorlgt">"Error al cerrar sesión"</string>
+    <string name="errorLC">"Error al generar la lista de compras"</string>
+    <string name="errorCBLC">"Error al actualizar el estado del ingrediente"</string>
+    <string name="errorIDUser">"Error: ID de usuario inválido"</string>
+    <string name="emptyLC">"Lista de compras vacía"</string>
+    <string name="errorObtenerLC">"Error al obtener la lista de compras"</string>
+    <string name="errorIDLista">"Error: ID de lista de compras inválido"</string>
+    <string name="errorRecetasLC">"No hay recetas para mostrar"</string>
+    <string name="errorMisListas">"Error al obtener sus listas de compras"</string>
+    <string name="emptymeals">"Por favor, seleccione una comida del día"</string>
+    <string name="fechaanterior">"La fecha no puede ser anterior a hoy"</string>
+    <string name="nrocominvalido">"El número de comensales debe estar entre 1 y 20"</string>
+    <string name="errorRecetaPlan">"Error al obtener la receta"</string>
+    <string name="errorFecha">"Error: fecha o ID de usuario inválido"</string>
+    <string name="noComidasFecha">"No hay comidas planificadas para esta fecha"</string>
+    <string name="errorComidasFecha">"Error al obtener sus comidas"</string>
+    <string name="camposvaciosingred">"Por favor, complete todos los datos del ingrediente"</string>
+    <string name="errorAgregarRec">"Error al agregar receta"</string>
+    <string name="errorUnidades">"Error al cargar unidades de medida"</string>
+    <string name="errorMisRecetas">"Error al obtener sus recetas"</string>
+    <string name="errorIDReceta">"Error: ID de receta inválido"</string>
+    <string name="errorbqda">"Error al buscar recetas"</string>
+
+    <!-- Avisos/confirmaciones -->
+    <string name="titleomitir">"¿Desea omitir el cuestionario?</string>
+    <string name="textomitir">"Esta acción no puede revertirse"</string>
+    <string name="si">"Sí"</string>
+    <string name="no">"No"</string>
+    <string name="titleomitirpreg">"¿Desea omitir la pregunta?"</string>
+    <string name="titlesalir">"¿Desea reiniciar el cuestionario?"</string>
+    <string name="textsalir">"Volverá a la pantalla inicial del mismo. Sus respuestas actuales no se guardarán"</string>
+    <string name="textlogout">"¿Desea cerrar sesión?"</string>
+    <string name="titledate">"¿Qué desea hacer en esta fecha?"</string>
+    <string name="verplanif">"Ver comidas planificadas"</string>
+    <string name="planificar">"Planificar una comida"</string>
+    <string name="instruccionesplan">"Arrastrar una receta a esta fecha para planificarla"</string>
+    <string name="queLC">"¿Qué desea hacer?"</string>
+    <string name="verahora">"Ver lista ahora"</string>
+    <string name="vermastarde">"Ver lista más tarde"</string>
+    <string name="vermasLC">"Podrá ver su lista de compras en el apartado 'Mis listas de compras'"</string>
+    <string name="titleeliminarimg">"Eliminar imagen"</string>
+    <string name="texteliminarimg">"¿Desea eliminar la imagen actual de la receta?"</string>
+
+    <!-- Éxitos -->
+    <string name="regCorrecto">"¡Se registró correctamente!"</string>
+    <string name="lgtCorrecto">"Se ha cerrado correctamente su sesión"</string>
+    <string name="lcCorrecto">"¡Se generó su lista de compras!"</string>
+    <string name="lcMostrando">"Mostrando lista de compras"</string>
+    <string name="plCorrecto">"¡Se planificó su comida exitosamente!"</string>
+    <string name="rcCorrecto">"¡Su receta se agregó correctamente!"</string>
+
+    <!-- Ingreso (INGRESO) -->
+    <string name="IGO_welcome">"¡Le damos la bienvenida!"</string>
+    <string name="IGO_login">"iniciar sesión"</string>
+    <string name="IGO_register">registrarse</string>
+    <string name="IGO_no_acc">Ingresar sin una cuenta</string>
+    <string name="IGO_logout">Cerrar sesión</string>
+
+    <!-- Registro (INGRESO) -->
+    <string name="ING_titleREG">"Registro"</string>
+    <string name="ING_instructionsREG">"Todos los campos son obligatorios."</string>
+    <string name="ING_passConfREG">"Confirmación de la contraseña"</string>
+    <string name="ING_minAgeREG">"Para poder utilizar la aplicación, usted debe ser mayor de 18 años"</string>
+    <string name="ING_validosNombreREG">"3 a 100 caracteres"</string>
+    <string name="ING_validosUserREG">"5 a 15 caracteres, sin espacios. Puede tener números"</string>
+    <string name="ING_validosPassREG">"8 a 20 caracteres.
+Al menos: un caracter en mayúscula, un número, y un
+caracter especial (@#\$%^+=!)"</string>
+    <string name="ING_validosFechaREG">"'DD/MM/AAAA'"</string>
+    <string name="fechaNacimiento">"Fecha de nacimiento"</string>
+    
+    <!-- Inicio de sesión (INGRESO) -->
+    <string name="ING_titleIS">"Inicio de sesión"</string>
+    <string name="ING_usernameIS">"Nombre de usuario"</string>
+    <string name="ING_passwordIS">"Contraseña"</string>
+
+    <!-- Cuestionario -->
+    <string name="CS_btnSalir">"Reiniciar cuestionario"</string>
+    <string name="CS_btnAnterior">"Pregunta anterior"</string>
+    <string name="CS_btnSiguiente">"Siguiente"</string>
+    <string name="CS_btnOmitirCuestionario">"Omitir cuestionario"</string>
+    <string name="CS_title">"Cuestionario inicial"</string>
+    <string name="CS_instructions">"Este cuestionario:\n\n• Tiene el objetivo de identificar sus necesidades y hábitos alimenticios para que la recomendación de recetas sea más oportuna.\n• Tiene solo tres preguntas y es opcional.\n• Si se omite, se podrá contestar más tarde.\n\nPor favor, seleccione la pregunta que desee responder:"</string>
+    <string name="CS_btnP1">"PREGUNTA 1 - METAS NUTRICIONALES"</string>
+    <string name="CS_btnP2">"PREGUNTA 2 - NUTRIENTES NO APTOS PARA CONSUMO"</string>
+    <string name="CS_btnOmitirPreguntaCD">"Omitir pregunta"</string>
+    <string name="CS_btnTerminarCuestionario">"Terminar cuestionario"</string>
+
+    <!-- Metas nutricionales (CUESTIONARIO -->
+    <string name="CS_titleMN">"Pregunta 1 - \n Metas nutricionales"</string>
+    <string name="CS_instrMN">"Por favor, seleccione aquella/s meta/s que sigue o que quiere seguir. Puede seleccionar como máximo 3 (tres)."</string>
+    <string name="M1">"Llevar una dieta equilibrada"</string>
+    <string name="M2">"Fortalecer el cabello, la piel y las uñas"</string>
+    <string name="M3">"Evitar el envejecimiento prematuro"</string>
+    <string name="M4">"Beneficiar la salud ósea"</string>
+    <string name="M5">"Prevenir enfermedades cardiovasculares"</string>
+    <string name="M6">"Depurar el organismo"</string>
+    <string name="M7">"Favorecer el funcionamiento cerebral"</string>
+    <string name="M8">"Aliviar el estrés"</string>
+    <string name="M9">"Vivir una larga vida"</string>
+    <string name="M10">"Aumentar la productividad"</string>
+    <string name="M11">"Ninguna"</string>
+
+    <!-- Nutrientes (CUESTIONARIO) -->
+    <string name="CS_titleN">"Pregunta 2 - \n Nutrientes no aptos para consumo"</string>
+    <string name="CS_instruccionesN">"Seleccione, si los hay, nutrientes que NO pueda consumir:"</string>
+    <string name="vitaminaA">"Vitamina A"</string>
+    <string name="betacaroteno">"Betacaroteno"</string>
+    <string name="vitaminaB1">"Vitamina B1"</string>
+    <string name="vitaminaB2">"Vitamina B2"</string>
+    <string name="vitaminaB3">"Vitamina B3"</string>
+    <string name="vitaminaB6">"Vitamina B6"</string>
+    <string name="vitaminaB12">"Vitamina B12"</string>
+    <string name="vitaminaC">"Vitamina C"</string>
+    <string name="vitaminaD">"Vitamina D"</string>
+    <string name="vitaminaE">"Vitamina E"</string>
+    <string name="vitaminaK">"Vitamina K"</string>
+    <string name="acidoFolico">"Ácido fólico"</string>
+    <string name="hierro">"Hierro"</string>
+    <string name="calcio">"Calcio"</string>
+    <string name="magnesio">"Magnesio"</string>
+    <string name="zinc">"Zinc"</string>
+    <string name="selenio">"Selenio"</string>
+    <string name="fosforo">"Fosforo"</string>
+    <string name="sodio">"Sodio"</string>
+    <string name="yodo">"Yodo"</string>
+    <string name="potasio">"Potasio"</string>
+    <string name="manganeso">"Manganeso"</string>
+    <string name="boro">"Boro"</string>
+    <string name="cobre">"Cobre"</string>
+    <string name="proteinas">"Proteínas"</string>
+    <string name="carbohidratos">"Carbohidratos"</string>
+    <string name="fibra">"Fibra"</string>
+    <string name="colesterol">"Colesterol"</string>
+    <string name="grasasTotales">"Grasas totales"</string>
+    <string name="grasasSaturadas">"Grasas saturadas"</string>
+    <string name="azucar">"Azúcar"</string>
+    <string name="cafeina">"Cafeína"</string>
+    <string name="todos">"Sin restricciones"</string>
+
+    <!-- Comidas diarias (SPINNER DP) -->
+    <string name="CS_seleccionar">"Seleccionar..."</string>
+     <string name="CS_breakfast">"Desayuno"</string>
+    <string name="CS_lunch">"Almuerzo"</string>
+    <string name="CS_tea">"Merienda"</string>
+    <string name="CS_dinner">"Cena"</string>
+
+    <!-- Pantalla de inicio -->
+    <string name="PI_btnObtenerLista">"Obtener lista de la compra"</string>
+
+    <!-- Recetas -->
+    <string name="RC_titlePanelPI">"Recetas"</string>
+    <string name="RC_ingredients">"Ingredientes"</string>
+    <string name="RC_procedure">"Procedimiento"</string>
+
+    <!-- Mis recetas (RECETAS) -->
+    <string name="RC_titleMR">"Mis recetas"</string>
+    <string name="RC_bqdaMR">"Busque una receta..."</string>
+
+    <!-- Agregar receta (RECETAS) -->
+    <string name="RC_titleAR">"Agregar receta"</string>
+    <string name="RC_instruccionesAR">"* Indica que el campo es obligatorio"</string>
+    <string name="RC_imagenAR">"Imagen de la receta"</string>
+    <string name="RC_CDimagenAR">"Agregar imagen de la receta"</string>
+    <string name="RC_CDdeleteimgAR">"Eliminar imagen de la receta"</string>
+    <string name="RC_nombreAR">"* Nombre de la receta"</string>
+    <string name="RC_ingredienteAR">"* Ingrediente </string>
+    <string name="RC_cantidadAR">"* Cant."</string>
+    <string name="RC_procedimientoAR">"* Procedimiento"</string>
+
+    <string name="RC_hintnameAR">"4 a 100 caracteres"</string>
+    <string name="RC_hintingredientAR">"4 a 100 caracteres"</string>
+    <string name="RC_hintcantAR">"Dec."</string>
+    <string name="RC_CDdeteleingrAR">"Eliminar ingrediente"</string>
+    <string name="RC_hintprocAR">"20 a 1000 caracteres"</string>
+    <string name="RC_btnAgregar">"Agregar"</string>
+    <string name="RC_validosCantidadAR">"Ej. '2.00'"</string>
+
+    <!-- Planificación -->
+    <string name="PL_titlePanelPI">"Planificador"</string>
+    <string name="PL_planificarALT">"Planificar"</string>
+    <string name="muybaja">"Muy baja"</string>
+    <string name="baja">"Baja"</string>
+    <string name="media">"Media"</string>
+    <string name="alta">"Alta"</string>
+    <string name="muyalta">"Muy alta"</string>
+
+    <!-- Datos de la planificación (PLANIFICACIÓN) -->
+    <string name="PL_titleDP">"Datos de la planificación"</string>
+    <string name="PL_instructionsDP">"Por favor, complete los siguientes datos para planificar su comida"</string>
+    <string name="PL_fechaDP">"Fecha"</string>
+    <string name="PL_nroComensalesDP">"Número de comensales"</string>
+    <string name="PL_mealDP">"Comida del día"</string>
+    <string name="PL_validosComensalesDP">"Mínimo 1, máximo 20"</string>
+
+    <!-- Fecha (PLANIFICACIÓN) -->
+    <string name="PL_nameF">"Nombre de la comida"</string>
+
+    <!-- Lista de la compra (LISTAS DE COMPRAS) -->
+    <string name="LC_titleLC">"Lista de la compra"</string>
+
+    <!-- Mis listas de compras (LISTAS DE COMPRAS) -->
+    <string name="LC_titleML">"Mis listas de compras"</string>
+    <string name="FN_fechaNacimiento">"Fecha de nacimiento"</string>
+
+    <!-- Intervalo (LISTAS DE COMPRAS) -->
+    <string name="LC_titleIV">"Seleccionar intervalo"</string>
+    <string name="LC_instrIV">"Por favor, elija las fechas que quiere incluir en la lista de compras"</string>
+    <string name="LC_fiIV">"Fecha inicial:"</string>
+    <string name="LC_hintFIIV">"Seleccionar fecha inicial"</string>
+    <string name="LC_ffIV">"Fecha final:"</string>
+    <string name="LC_hintFFIV">"Seleccionar fecha final"</string>
+
+    <string-array name="comidas_dia">
+        <item>Desayuno</item>
+        <item>Almuerzo</item>
+        <item>Merienda</item>
+        <item>Cena</item>
+    </string-array>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".ui.recetas.RecetaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_image_rounded"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitleREC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivREC"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:paddingBottom="12dp">
+
+                    <ImageButton
+                        android:id="@+id/btnPlanificarREC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/va_planificar" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvIngredientsTitleREC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/RC_ingredients"
+                    android:textColor="@color/black"
+                    android:fontFamily="cursive"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvIngredientsREC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="15sp"
+                    android:paddingBottom="12dp"
+                    android:lineSpacingExtra="4dp"
+                    tools:text="BANANA 1 IU\nDULCE DE LECHE 100 g" />
+
+                <TextView
+                    android:id="@+id/tvProcTitleREC"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="12dp"
+                    android:text="@string/RC_procedure"
+                    android:textColor="@color/black"
+                    android:fontFamily="cursive"
+                    android:textSize="20sp"  />
+
+                <TextView
+                    android:id="@+id/tvProcREC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="15sp"
+                    android:paddingBottom="12dp"
+                    android:lineSpacingExtra="4dp"
+                    tools:text="Esta receta se realiza de la siguiente manera" />
+
+                <TextView
+                    android:id="@+id/tvDisclaimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:text="@string/disclaimer"
+                    android:textColor="@color/disclaimer_color" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

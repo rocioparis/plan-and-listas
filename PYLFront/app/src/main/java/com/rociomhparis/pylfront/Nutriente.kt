@@ -1,0 +1,31 @@
+package com.rociomhparis.pylfront
+
+enum class Nutriente(val stringRes: Int) {
+        VITAMINA_A(R.string.vitaminaA),
+        BETACAROTENO(R.string.betacaroteno),
+        VITAMINA_B1(R.string.vitaminaB1),
+        VITAMINA_B2(R.string.vitaminaB2),
+        VITAMINA_B3(R.string.vitaminaB3),
+        VITAMINA_B6(R.string.vitaminaB6),
+        VITAMINA_B12(R.string.vitaminaB12),
+        VITAMINA_C(R.string.vitaminaC),
+        VITAMINA_D(R.string.vitaminaD),
+        VITAMINA_E(R.string.vitaminaE),
+        VITAMINA_K(R.string.vitaminaK),
+        ACIDO_FOLICO(R.string.acidoFolico),
+        HIERRO(R.string.hierro),
+        CALCIO(R.string.calcio),
+        MAGNESIO(R.string.magnesio),
+        ZINC(R.string.zinc),
+        SELENIO(R.string.selenio),
+        FOSFORO(R.string.fosforo),
+        YODO(R.string.yodo),
+        POTASIO(R.string.potasio),
+        SODIO(R.string.sodio),
+        MANGANESO(R.string.manganeso),
+        BORO(R.string.boro),
+        COBRE(R.string.cobre),
+        PROTEINAS(R.string.proteinas),
+        CARBOHIDRATOS(R.string.carbohidratos),
+        FIBRA(R.string.fibra)
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:padding="16dp"
+    tools:context=".ui.recetas.AgregarRecetaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_image_rounded"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitleAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/RC_titleAR"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvInstruccionesAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/RC_instruccionesAR"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:textSize="17sp"
+            android:text="@string/RC_imagenAR"
+            android:layout_gravity="left"
+            android:layout_marginHorizontal="40dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/ibImgAR"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_imgbtn_rounded"
+                android:clipToOutline="true"
+                android:contentDescription="@string/RC_CDimagenAR"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_image" />
+
+            <ImageButton
+                android:id="@+id/ibImgDeleteAR"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/ic_delete"
+                android:backgroundTint="@color/cancel"
+                android:contentDescription="@string/RC_CDdeleteimgAR"
+                android:padding="4dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etNameAR"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="40dp"
+            android:background="@drawable/bg_edittext_rounded"
+            android:backgroundTint="@color/RC_etbackground"
+            android:hint="@string/RC_nombreAR"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etIngredientAR"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_edittext_rounded"
+                android:backgroundTint="@color/RC_etbackground"
+                android:hint="@string/RC_ingredienteAR"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etCantIngAR"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_rounded"
+                android:backgroundTint="@color/RC_etbackground"
+                android:hint="@string/RC_cantidadAR"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spUnitIngrAR"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_rounded"
+                android:backgroundTint="@color/RC_etbackground"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btnOKIngrAR"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_button_rounded"
+                android:backgroundTint="@color/accept"
+                android:text="@string/btnOK"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutIngredientesAgregados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etProcAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_edittext_rounded"
+            android:backgroundTint="@color/RC_etbackground"
+            android:hint="@string/RC_procedimientoAR"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button_rounded"
+                android:backgroundTint="@color/cancel"
+                android:text="@string/btnCancelar"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnAddAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_rounded"
+                android:backgroundTint="@color/accept"
+                android:text="@string/RC_btnAgregar"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDisclaimerAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/disclaimer"
+            android:textColor="@color/disclaimer_color" />
+
+    </LinearLayout>
+</ScrollView>
