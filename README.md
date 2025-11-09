@@ -21,5 +21,5 @@ Luego ejecutar el backend.
 
 Esta aplicación es un **producto mínimo viable (MVP) académico** que utiliza **datos sintéticos**.  
 No se recolectan datos personales reales.  
-Las contraseñas se almacenan de forma **hasheada**.  
+Las contraseñas se almacenan de forma **hasheada** (bcrypt).  
 Cualquier envío a servicios externos está desactivado en este entorno de demo.
