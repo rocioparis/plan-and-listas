@@ -32,7 +32,8 @@ reducir_nutrientes = evitables
 aumentar = controlDifuso.Antecedent(np.arange(0, 101, 1), 'aumentar')
 reducir = controlDifuso.Antecedent(np.arange(0, 101, 1), 'reducir')
 
-aumentar['mal'] = libreriaLD.trimf(aumentar.universe, [0,0,40])
+# Porcentaje de presencia de los nutrientes en la receta
+aumentar['mal'] = libreriaLD.trimf(aumentar.universe, [0,0,40]) # prefiere evitarse que esté en -40%
 aumentar['medio'] = libreriaLD.trimf(aumentar.universe, [30,60,80])
 aumentar['bien'] = libreriaLD.trimf(aumentar.universe, [70,100,100])
 

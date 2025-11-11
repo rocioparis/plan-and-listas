@@ -27,6 +27,7 @@ def get_db():
 
 class IngredienteLista(BaseModel):
     idIngrediente: int
+    id: int
     nombre: str
     nombreElemento: Optional[str]
     cantidad: Optional[float]
@@ -98,27 +99,27 @@ def generar_lista_compras_unica(
         ).all()
 
         for rp in recetas_plan:
-            # Traer nombre real de la receta desde la tabla RECETAS
             receta = db.query(RECETAS).filter(RECETAS.IDReceta == rp.IDReceta).first()
             if not receta:
-                continue  # saltear si no existe la receta
+                continue
 
             ingredientes_receta = db.query(RECETAS_INGREDIENTES).filter(
                 RECETAS_INGREDIENTES.IDReceta == rp.IDReceta
             ).all()
 
             ingredientes_lista = []
+
             for ing_rec in ingredientes_receta:
-                # Guardar en INGREDIENTES_LISTAS
+                # guardamos el ítem en la tabla intermedia
                 nuevo_item = INGREDIENTES_LISTAS(
                     IDListaDeCompras=nueva_lista.IDListaDeCompras,
                     IDIngrediente=ing_rec.IDIngrediente,
                     disponibleItem=False
                 )
                 db.add(nuevo_item)
-                db.commit()
-                db.refresh(nuevo_item)
+                db.flush() 
 
+                # traemos nombre y unidad
                 nombre_ingrediente = db.query(INGREDIENTES.nombreIngrediente).filter(
                     INGREDIENTES.IDIngrediente == ing_rec.IDIngrediente
                 ).first()[0]
@@ -132,6 +133,7 @@ def generar_lista_compras_unica(
                 ingredientes_lista.append(
                     IngredienteLista(
                         idIngrediente=ing_rec.IDIngrediente,
+                        id=nuevo_item.ID,
                         nombre=nombre_ingrediente,
                         nombreElemento=None,
                         cantidad=ing_rec.cantidadIngrediente,
@@ -139,6 +141,8 @@ def generar_lista_compras_unica(
                         disponibleItem=False
                     )
                 )
+
+            db.commit()  # ✅ solo una vez por receta
 
             recetas_totales.append(
                 RecetaConIngredientes(
@@ -228,6 +232,7 @@ def obtener_lista_por_id(idLista: int, db: Session = Depends(get_db)):
                 ingredientes_lista.append(
                     IngredienteLista(
                         idIngrediente=ing_rec.IDIngrediente,
+                        id=rel.ID,
                         nombre=nombre_ingrediente,
                         nombreElemento=None,
                         cantidad=ing_rec.cantidadIngrediente,
@@ -252,16 +257,14 @@ def obtener_lista_por_id(idLista: int, db: Session = Depends(get_db)):
     )
 
 
-@router.put("/listas/{id_lista}/ingrediente/{idIngrediente}/estado")
+@router.put("/listas/ingrediente/{idIngredienteLista}/estado")
 def actualizar_estado_ingrediente(
-    id_lista: int,
-    idIngrediente: int,
+    idIngredienteLista: int,
     disponible: bool,
     db: Session = Depends(get_db)
 ):
     relacion = db.query(INGREDIENTES_LISTAS).filter(
-        INGREDIENTES_LISTAS.IDListaDeCompras == id_lista,
-        INGREDIENTES_LISTAS.IDIngrediente == idIngrediente
+        INGREDIENTES_LISTAS.ID == idIngredienteLista
     ).first()
 
     if not relacion:
@@ -270,4 +273,4 @@ def actualizar_estado_ingrediente(
     relacion.disponibleItem = disponible
     db.commit()
 
-    return {"mensaje": "Estado actualizado", "idIngrediente": idIngrediente, "disponible": disponible}
+    return {"mensaje": "Estado actualizado", "idIngredienteLista": idIngredienteLista, "disponible": disponible}

@@ -46,9 +46,10 @@ class INGREDIENTES_LISTAS(DeclarativeBase):
     __tablename__ = "INGREDIENTES_LISTAS"
     __table_args__ = {'schema': 'public'}
 
-    IDListaDeCompras = Column(Integer, ForeignKey("public.LISTAS_DE_COMPRAS.IDListaDeCompras"), primary_key=True)
-    IDIngrediente = Column(Integer, ForeignKey("public.INGREDIENTES.IDIngrediente"), primary_key=True)
-    disponibleItem = Column(Boolean)
+    ID = Column(Integer, primary_key=True, autoincrement=True)
+    IDListaDeCompras = Column(Integer, ForeignKey("public.LISTAS_DE_COMPRAS.IDListaDeCompras"))
+    IDIngrediente = Column(Integer, ForeignKey("public.INGREDIENTES.IDIngrediente"))
+    disponibleItem = Column(Boolean, nullable=False, default=False)
 
 class COMIDAS_DIARIAS(DeclarativeBase):
     __tablename__ = "COMIDAS_DIARIAS"
