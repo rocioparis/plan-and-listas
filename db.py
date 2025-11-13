@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, Boolean, DateTime
+from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, Boolean, DateTime, Time
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.ext.automap import automap_base
 from datetime import datetime
@@ -16,9 +16,6 @@ metadata.reflect(bind=engine)
 
 AutoBase = automap_base(metadata=metadata)
 AutoBase.prepare()
-
-RECETAS_INGREDIENTES = AutoBase.classes.RECETAS_INGREDIENTES
-SESIONES = AutoBase.classes.SESIONES
 
 DeclarativeBase = declarative_base()
 
@@ -158,5 +155,23 @@ class PLANIFICACIONES_RECETAS(DeclarativeBase):
     IDReceta = Column(Integer, ForeignKey("public.RECETAS.IDReceta"), primary_key=True)
     IDPlanificacion = Column(Integer, ForeignKey("public.PLANIFICACIONES.IDPlanificacion"), primary_key=True)
 
+class RECETAS_INGREDIENTES(DeclarativeBase):
+    __tablename__ = "RECETAS_INGREDIENTES"
+    __table_args__ = {'schema': 'public'}
+
+    IDReceta = Column(Integer, ForeignKey("public.RECETAS.IDReceta"), primary_key=True)
+    IDIngrediente = Column(Integer, ForeignKey("public.INGREDIENTES.IDIngredientes"), primary_key=True)
+    cantidadIngrediente = Column(Double)
+    IDUnidadMedida = Column(Integer, ForeignKey("public.UNIDADES_MEDIDA.IDUnidadMedida"), nullable=True)
+
+class SESIONES(DeclarativeBase):
+    __tablename__ = "SESIONES"
+    __table_args__ = {'schema': 'public'}
+
+    IDSesion = Column(Integer, primary_key=True)
+    IDUser = Column(Integer, ForeignKey("public.USERS.IDUser"), nullable=True)
+    fechaSesion = Column(Date)
+    horaInicialSesion = Column(Time)
+    horaFinalSesion = Column(Time)
 
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
