@@ -24,7 +24,22 @@ def get_db():
         db.close()
 
 # & IMPORTAR Y MONTAR LOS ROUTERS DE LOS MÓDULOS ########################################################
-import usuarios, cuestionarios, metas, nutrientes, recetasPanel, login, rtados_bqda_rec, detalle_receta, plan_comida, lista_compra, agregar_receta, add_recipe, receta_por_plan, logout
+from api_rest import (
+    usuarios,
+    cuestionarios,
+    metas,
+    nutrientes,
+    recetasPanel,
+    login,
+    rtados_bqda_rec,
+    detalle_receta,
+    plan_comida,
+    lista_compra,
+    agregar_receta,
+    add_recipe,
+    receta_por_plan,
+    logout,
+)
 
 app.include_router(usuarios.router, prefix="/usuarios", tags=["Usuarios"])
 app.include_router(login.router, tags=["Logs"])
