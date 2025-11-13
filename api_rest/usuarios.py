@@ -9,7 +9,7 @@ from datetime import datetime
 from datetime import date
 from db import USERS
 import re
-from api_rest import get_db
+from api_rest.api_rest import get_db
 
 router = APIRouter()
 

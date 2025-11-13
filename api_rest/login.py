@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from db import USERS, SESIONES
 from pydantic import BaseModel
 from datetime import datetime, timedelta
-from api_rest import get_db
+from api_rest.api_rest import get_db
 import bcrypt
 from jose import jwt
 from dotenv import load_dotenv

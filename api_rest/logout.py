@@ -2,7 +2,7 @@ from fastapi import HTTPException, APIRouter
 from sqlalchemy.orm import Session
 from fastapi.params import Depends
 from db import SESIONES
-from api_rest import get_db
+from api_rest.api_rest import get_db
 from datetime import datetime
 from pydantic import BaseModel
 

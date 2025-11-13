@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from db import RECETAS, CUESTIONARIOS, NUTRIENTES_CUESTIONARIOS
-from api_rest import get_db
+from api_rest.api_rest import get_db
 from recomendaciones import obtener_recetas_recomendadas
 
 router = APIRouter()

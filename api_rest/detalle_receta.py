@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from db import RECETAS, RECETAS_INGREDIENTES, INGREDIENTES, UNIDADES_MEDIDA
-from api_rest import get_db
+from api_rest.api_rest import get_db
 from pydantic import BaseModel
 from typing import List, Optional
 
