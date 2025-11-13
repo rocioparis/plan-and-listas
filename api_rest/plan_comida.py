@@ -16,7 +16,7 @@ from db import (
     COMIDAS_DIARIAS
 )
 from datetime import datetime
-from recomendaciones import crear_inputs_desde_receta
+from api_rest.recomendaciones import crear_inputs_desde_receta
 
 router = APIRouter(prefix="/plan_comida", tags=["Plan de Comida"])
 
