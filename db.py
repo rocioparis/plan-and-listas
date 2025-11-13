@@ -2,10 +2,14 @@ from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, Str
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.ext.automap import automap_base
 from datetime import datetime
+import os
 
+engine = create_engine(os.getenv("DATABASE_URL"))
+
+"""
 engine = create_engine(
     "postgresql+psycopg2://postgres:uePdo43eThNeg54Ujoug35JekoUz@localhost:5432/PlanListasBD"
-)
+)"""
 
 metadata = MetaData(schema="public")
 metadata.reflect(bind=engine)
