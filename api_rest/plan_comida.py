@@ -194,24 +194,3 @@ def obtener_comidas_planificadas(idUser: int, fecha: str, db: Session = Depends(
                     "imagen_url": receta_db.imagenReceta
                 })
     return comidas
-
-@router.delete("/eliminar")
-def eliminar_comida_planificada(idComida: int, idUser: int, fecha: str, db: Session = Depends(get_db)):
-    fecha_dt = datetime.fromisoformat(fecha).date()
-
-    planificaciones = db.query(PLANIFICACIONES).filter(
-        PLANIFICACIONES.IDUser == idUser,
-        PLANIFICACIONES.fechaPlanificacion == fecha_dt
-    ).all()
-
-    for plan in planificaciones:
-        plan_receta = db.query(PLANIFICACIONES_RECETAS).filter(
-            PLANIFICACIONES_RECETAS.IDPlanificacion == plan.IDPlanificacion,
-            PLANIFICACIONES_RECETAS.IDReceta == idComida
-        ).first()
-        if plan_receta:
-            db.delete(plan_receta)
-            db.commit()
-            return {"mensaje": "Comida eliminada"}
-
-    return {"error": "Comida no encontrada"}
