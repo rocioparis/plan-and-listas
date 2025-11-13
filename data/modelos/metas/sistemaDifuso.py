@@ -1,4 +1,3 @@
-import skfuzzy as libreriaLD
 from skfuzzy import control as controlDifuso
 
 # ? Recibe, por ejemplo, las reglas, 'coherenciaNutricionalMeta1', coherenciaNutricionalMeta1 e inputs_sistema = {'aumentar': promedio e/ 10g y 20g (es 15), 'reducir': 0g}

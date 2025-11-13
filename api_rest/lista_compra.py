@@ -110,7 +110,6 @@ def generar_lista_compras_unica(
             ingredientes_lista = []
 
             for ing_rec in ingredientes_receta:
-                # guardamos el ítem en la tabla intermedia
                 nuevo_item = INGREDIENTES_LISTAS(
                     IDListaDeCompras=nueva_lista.IDListaDeCompras,
                     IDIngrediente=ing_rec.IDIngrediente,
@@ -119,7 +118,6 @@ def generar_lista_compras_unica(
                 db.add(nuevo_item)
                 db.flush() 
 
-                # traemos nombre y unidad
                 nombre_ingrediente = db.query(INGREDIENTES.nombreIngrediente).filter(
                     INGREDIENTES.IDIngrediente == ing_rec.IDIngrediente
                 ).first()[0]
@@ -142,7 +140,7 @@ def generar_lista_compras_unica(
                     )
                 )
 
-            db.commit()  # ✅ solo una vez por receta
+            db.commit()
 
             recetas_totales.append(
                 RecetaConIngredientes(

@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, BigInteger, Boolean, DateTime
+from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, Boolean, DateTime
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.ext.automap import automap_base
 from datetime import datetime
@@ -111,20 +111,12 @@ class USERS(DeclarativeBase):
     password = Column(String)
     fechaNacimiento = Column(Date)
 
-class ESTADOSCUES(DeclarativeBase):
-    __tablename__ = "ESTADOSCUES"
-    __table_args__ = {'schema': 'public'}
-
-    IDEstadoT = Column(Integer, primary_key=True)
-    nombreEstado = Column(String)
-
 class CUESTIONARIOS(DeclarativeBase):
     __tablename__ = "CUESTIONARIOS"
     __table_args__ = {'schema': 'public'}
 
     IDCuestionario = Column(Integer, primary_key=True)
     IDUser = Column(Integer, ForeignKey("public.USERS.IDUser"), nullable=False)
-    IDEstadoT = Column(Integer, ForeignKey("public.ESTADOSCUES.IDEstadoT"), nullable=True)
 
 class METAS(DeclarativeBase):
     __tablename__ = "METAS"

@@ -140,7 +140,6 @@ def crear_inputs_desde_receta(receta, nutrientes_no_consumibles):
     )
     otros = Otros(Colesterol=0, Cafeina=0)
 
-    # Mapas de nombres (para que no dé KeyError)
     nombre_map_vitaminas = {
         "a": "A",
         "betacaroteno": "Betacaroteno",
@@ -308,8 +307,6 @@ def obtener_recetas_recomendadas(nutrientes_no_consumibles, db: Session = None):
     print("Recetas que se envían al front:", recetas_para_front)
     return recetas_para_front
 
-
-# Búsqueda con restricciones
 def obtener_resultados_bqda(nutrientes_no_consumibles, db: Session = None):
     recetas = obtener_todas_las_recetas(db)
 

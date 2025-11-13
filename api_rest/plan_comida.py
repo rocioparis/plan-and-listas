@@ -54,12 +54,6 @@ def agregar_receta_al_plan(idReceta: int, idUser: int, fecha: str, db: Session =
         ).all()
 
         # Cada IDNutriente conectado al IDCuestionario
-        """
-        for nutriente_c in nutrientes_cuestionario:
-            nutriente_db = db.query(NUTRIENTES).filter(NUTRIENTES.IDNutriente == nutriente_c.IDNutriente).first()
-            if nutriente_db:
-                nutrientes_no_consumibles.append(nutriente_db.IDNutriente)
-        """
         for nutriente_c in nutrientes_cuestionario:
             nutriente_db = db.query(NUTRIENTES).filter(NUTRIENTES.IDNutriente == nutriente_c.IDNutriente).first()
             if nutriente_db and nutriente_db.nombreNutriente:
@@ -86,7 +80,7 @@ def agregar_receta_al_plan(idReceta: int, idUser: int, fecha: str, db: Session =
             except ModuleNotFoundError:
                 print(f"⚠️ No se encontró el archivo meta{meta_id}.py")
 
-    # Si user no tiene metas, no evalúa. Acá iría a la pantalla Datos de la planificación
+    # Si user no tiene metas, no evalúa. Acá iría a la pantalla "Datos de la planificación"
     if not metas_usuario | metas_usuario==11:
         coherencia = None
 

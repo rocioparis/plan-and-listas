@@ -7,7 +7,6 @@ from typing import List, Optional
 
 router = APIRouter()
 
-# Modelos Pydantic para la respuesta
 class IngredienteModel(BaseModel):
     id: int
     nombre: Optional[str]
