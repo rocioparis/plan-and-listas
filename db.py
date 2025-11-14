@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, Boolean, DateTime, Time
+from sqlalchemy import create_engine, MetaData, Column, ForeignKey, Integer, String, Date, Double, Boolean, Text, DateTime, Time
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.ext.automap import automap_base
 from datetime import datetime
@@ -76,7 +76,7 @@ class RECETAS(DeclarativeBase):
     IDReceta = Column(Integer, primary_key=True)
     IDUser = Column(Integer, ForeignKey("public.USERS.IDUser"), nullable=True)
     nombreReceta = Column(String)
-    imagenReceta = Column(String)
+    imagenReceta = Column(Text)
     procedimiento = Column(String)
 
 class UNIDADES_MEDIDA(DeclarativeBase):
