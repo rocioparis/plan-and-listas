@@ -160,7 +160,7 @@ class RECETAS_INGREDIENTES(DeclarativeBase):
     __table_args__ = {'schema': 'public'}
 
     IDReceta = Column(Integer, ForeignKey("public.RECETAS.IDReceta"), primary_key=True)
-    IDIngrediente = Column(Integer, ForeignKey("public.INGREDIENTES.IDIngredientes"), primary_key=True)
+    IDIngrediente = Column(Integer, ForeignKey("public.INGREDIENTES.IDIngrediente"), primary_key=True)
     cantidadIngrediente = Column(Double)
     IDUnidadMedida = Column(Integer, ForeignKey("public.UNIDADES_MEDIDA.IDUnidadMedida"), nullable=True)
 
