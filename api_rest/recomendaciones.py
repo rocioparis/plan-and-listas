@@ -311,7 +311,7 @@ def obtener_resultados_bqda(nutrientes_no_consumibles, db: Session = None):
     recetas = obtener_todas_las_recetas(db)
 
     if not nutrientes_no_consumibles:
-        return random.sample(recetas, min(5, len(recetas)))
+        return recetas
 
     recetas_filtradas = []
     temp_db = Session(bind=db.bind)
@@ -324,7 +324,7 @@ def obtener_resultados_bqda(nutrientes_no_consumibles, db: Session = None):
         temp_db.close()
 
     if not recetas_filtradas:
-        return random.sample(recetas, min(5, len(recetas)))
+        return recetas
 
     recetas_para_front = [
         {"nombre": r["nombre"], "imagen_url": r["imagen_url"]}
