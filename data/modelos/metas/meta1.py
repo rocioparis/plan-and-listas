@@ -91,9 +91,8 @@ def evaluar_meta(inputs):
                     # De ser así, agrega el valor del nutriente a la lista valores_aumentar 
                     # ? (ej. 10g y 20g a valores_aumentar)
                     valores_aumentar.append(getattr(grupo, nombre_attr))
-    # Calcula el promedio de todos esos valores, reemplazando NaN por 0 
-    # ? (ej. promedio_aumentar tiene el promedio de 10g y 20g)
-    promedio_aumentar = np.nan_to_num(np.mean(valores_aumentar), nan=0)
+    valores_validos = [v for v in valores_aumentar if v > 0]
+    promedio_aumentar = np.mean(valores_validos) if valores_validos else 0
 
     # Guardará los valores de los nutrientes que quiere reducir (nutr NO recomendados para esta meta)
     valores_reducir = []
@@ -112,7 +111,8 @@ def evaluar_meta(inputs):
                 # ! De ser así, agrega el valor de 30g a valores_reducir
                 valores_reducir.append(getattr(grupo_otros, nombre_attr))
     # ! promedio_reducir tendrá el promedio de 30g
-    promedio_reducir = np.nan_to_num(np.mean(valores_reducir), nan=0)
+    valores_validos_reducir = [v for v in valores_reducir if v > 0]
+    promedio_reducir = np.mean(valores_validos_reducir) if valores_validos_reducir else 0
 
     # inputs_sistema guarda dos diccionarios:
     # ? Ej inputs_sistema = { 'aumentar': promedio de 10g y 20g, 'reducir': promedio de 0g }

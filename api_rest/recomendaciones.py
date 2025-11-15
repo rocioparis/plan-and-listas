@@ -17,7 +17,7 @@ from typing import Optional, List
 # ? dichos porcentajes para evaluar la coherencia nutricional
 # Unidades en NUTRIENTES: g, mg, mcg
 def convertir(valor, unidad):
-    unidad = unidad.lower()
+   # unidad = unidad.lower()
     if unidad == "mg":
         return valor / 1000      # mg → g
     elif unidad == "mcg":
