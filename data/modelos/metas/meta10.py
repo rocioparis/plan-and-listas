@@ -70,7 +70,8 @@ def evaluar_meta(inputs):
                 nombre_attr = getattr(v, 'label', None) or v.__name__
                 if hasattr(grupo, nombre_attr):
                     valores_aumentar.append(getattr(grupo, nombre_attr))
-    promedio_aumentar = np.nan_to_num(np.mean(valores_aumentar), nan=0)
+    valores_validos = [v for v in valores_aumentar if v > 0]
+    promedio_aumentar = np.mean(valores_validos) if valores_validos else 0
 
     valores_reducir = []
     grupo_otros = getattr(inputs, 'otros', None)
@@ -79,7 +80,8 @@ def evaluar_meta(inputs):
             nombre_attr = getattr(v, 'label', None) or v.__name__
             if hasattr(grupo_otros, nombre_attr):
                 valores_reducir.append(getattr(grupo_otros, nombre_attr))
-    promedio_reducir = np.nan_to_num(np.mean(valores_reducir), nan=0)
+    valores_validos_reducir = [v for v in valores_reducir if v > 0]
+    promedio_reducir = np.mean(valores_validos_reducir) if valores_validos_reducir else 0
 
     inputs_sistema = {'aumentar': promedio_aumentar, 'reducir': promedio_reducir}
 
