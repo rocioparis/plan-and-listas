@@ -24,10 +24,6 @@ No se recolectan datos personales reales.
 Las contraseñas se almacenan de forma **hasheada** (bcrypt).  
 Cualquier envío a servicios externos está desactivado.
 
-## 🥗 Fuente de las recetas
-
-Las recetas utilizadas con fines de prueba provienen de la API pública Spoonacular (https://spoonacular.com/food-api), habiendo enviado peticiones al chat-bot.
-
 ## 🍴 Coherencia nutricional
 
 Esta aplicación evalúa la coherencia entre las metas nutricionales de las personas con sus elecciones alimentarias. Para ello, se han utilizado como fuente las **Guías Alimentarias para la Población Argentina (GAPA)** (https://www.argentina.gob.ar/sites/default/files/bancos/2020-08/guias-alimentarias-para-la-poblacion-argentina_manual-de-aplicacion_0.pdf), un documento técnico-metodológico elaborado por múltiples entidades especializadas en nutrición. Complementariamente, se han tenido en cuenta libros acerca de salud y alimentación. Sin embargo, antes de utilizar la aplicación, se recomienda **consultar a un profesional de la salud**, ya que esta aplicación no proporciona ni reemplaza asesoramiento médico.
