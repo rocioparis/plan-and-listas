@@ -1,5 +1,6 @@
 ## Ejecución
 El servidor está desplegado en Render, URL: https://plan-and-listas.onrender.com
+Para descargar el APK y ejecutar la aplicación móvil, ver rama "main" -> tags
 
 ## Privacidad
 
