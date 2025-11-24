@@ -6,6 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 # & IMPORTACIONES ############################################################################################# 
 from db import SessionLocal
 from importaciones import FastAPI
+from fastapi import APIRouter
 
 # & PERMITIR LA COMUNICACIÓN ENTRE ARCHIVOS ###################################################################
 
@@ -55,3 +56,19 @@ app.include_router(agregar_receta.router)
 app.include_router(add_recipe.router)
 app.include_router(receta_por_plan.router)
 app.include_router(logout.router)
+
+health_router = APIRouter()
+
+@health_router.get("/health")
+def health():
+    db = SessionLocal()
+    try:
+        db.execute("SELECT 1")
+        return {"status": "Base de datos activa"}
+    except Exception as e:
+        print(e)
+        return {"status": "Error con la base de datos"}
+    finally:
+        db.close()
+
+app.include_router(health_router)
