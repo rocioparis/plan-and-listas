@@ -19,7 +19,7 @@ Para ver el código fuente, ver rama "master".
 
 ## Tecnologías utilizadas ⚙️
 
-<img width="50" height="50" src="[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10](https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/4/kotlin-t96gvwmimcivcftb4eiks.png/kotlin-mj9amq8ua2o4nf8pkfah9.png?_a=DATAiZAAZAA0)"/> <img width="50" height="50" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"/> <img width="50" height="50" src="https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"/>
+<img width="50" height="50" src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/4/kotlin-t96gvwmimcivcftb4eiks.png/kotlin-mj9amq8ua2o4nf8pkfah9.png?_a=DATAiZAAZAA0"/> <img width="50" height="50" src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"/> <img width="50" height="50" src="https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"/>
 
 ## Entidad desarrolladora 👩‍💻
 
