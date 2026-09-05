@@ -19,7 +19,7 @@ Para ver el código fuente, ver rama "master".
 
 ## Tecnologías utilizadas ⚙️
 
-<img width="13" height="18" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10"/>
+<img width="50" height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10"/>
 <img src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"/>
 <img src="https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"/>
 
