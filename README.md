@@ -1,8 +1,7 @@
 #                                                         Plan&Listas
 <img width="1365" height="181" alt="Aplicación móvil para la planificación de comidas que evalúa la coherencia entre las metas nutricionales de las personas y sus elecciones alimentarias(1)" src="https://github.com/user-attachments/assets/0eb5269e-1580-440f-8698-7595eaa3c6d3" />
 
-<img src="https://img.shields.io/badge/estado-finalizado-green"/>
-<img src="https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500"/>
+<img src="https://img.shields.io/badge/estado-finalizado-green"/> <img src="https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500"/>
 
 ## Descripción del proyecto 💬
 
