@@ -11,11 +11,11 @@ Para ver el código fuente, ver rama "master".
 
 ## Funciones principales 🛠️
 
-* Búsqueda y visualización de recetas: Tanto personas usuarias autentificadas como no autentificadas podrán buscar recetas y visualizar detalles de las mismas, incluyendo título, fotografía, ingredientes (con cantidades y unidades de medida) y procedimiento.
-* Completado de cuestionario: Opcionalmente, luego del primer inicio de sesión, las personas usuarias podrán contestar un cuestionario en donde indiquen sus metas nutricionales y/o nutrientes que no puedan consumir.
-* Agregado de recetas: Las personas usuarias autentificadas podrán agregar sus recetas desde la pantalla "Mis recetas", incluyendo título, ingredientes, procedimiento y, opcionalmente, una imagen.
-* Planificación de comidas: Las personas usuarias autentificadas podrán planificar tanto las comidas que presenta la aplicación, como aquellas que hayan agregado. En caso de que hayan indicado sus metas nutricionales en el cuestionario, al planificar, la aplicación indicará qué coherencia tiene esa planificación que están intentado hacer con sus objetivos.
-* Obtención de listas de compras: Las personas usuarias podrán obtener y consultar listas de compras basadas en sus planificaciones, hechas automáticamente por la aplicación.
+* **Búsqueda y visualización de recetas**: Tanto personas usuarias autentificadas como no autentificadas podrán buscar recetas y visualizar detalles de las mismas, incluyendo título, fotografía, ingredientes (con cantidades y unidades de medida) y procedimiento.
+* **Completado de cuestionario**: Opcionalmente, luego del primer inicio de sesión, las personas usuarias podrán contestar un cuestionario en donde indiquen sus metas nutricionales y/o nutrientes que no puedan consumir.
+* **Agregado de recetas**: Las personas usuarias autentificadas podrán agregar sus recetas desde la pantalla "Mis recetas", incluyendo título, ingredientes, procedimiento y, opcionalmente, una imagen.
+* **Planificación de comidas**: Las personas usuarias autentificadas podrán planificar tanto las comidas que presenta la aplicación, como aquellas que hayan agregado. En caso de que hayan indicado sus metas nutricionales en el cuestionario, al planificar, la aplicación indicará qué coherencia tiene esa planificación que están intentado hacer con sus objetivos.
+* **Obtención de listas de compras**: Las personas usuarias podrán obtener y consultar listas de compras basadas en sus planificaciones, hechas automáticamente por la aplicación.
 
 ## Tecnologías utilizadas ⚙️
 
