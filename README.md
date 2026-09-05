@@ -4,13 +4,6 @@
 https://img.shields.io/badge/estado-finalizado-green
 https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500
 
-## Índice
-
-* Descripción del proyecto.
-* Funciones principales.
-* Tecnologías utilizadas.
-* Entidad desarrolladora.
-
 ## Descripción del proyecto 💬
 
 Repositorio del proyecto académico de Rocío París para la asignatura Proyecto Final. Producto Mínimo Viable (MVP) de Plan&Listas, una aplicación móvil para la planificación de comidas que evalúa la coherencia, expresada del 0% al 100%, entre las metas nutricionales de las personas y sus elecciones alimentarias.
