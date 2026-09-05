@@ -1,6 +1,36 @@
 #                                                         Plan&Listas
-<img width="1365" height="181" alt="Aplicación móvil para la planificación de comidas que evalúa la coherencia entre las metas nutricionales de las personas y sus elecciones alimentarias" src="https://github.com/user-attachments/assets/1bbca969-3b8e-4759-95b9-1901f7a7c642" />
+<img width="1365" height="181" alt="Aplicación móvil para la planificación de comidas que evalúa la coherencia entre las metas nutricionales de las personas y sus elecciones alimentarias(1)" src="https://github.com/user-attachments/assets/0eb5269e-1580-440f-8698-7595eaa3c6d3" />
 
-Repositorio del proyecto académico de Rocío París para la asignatura Proyecto Final. Producto Mínimo Viable (MVP) de "Aplicación móvil para la planificación de comidas que evalúa la coherencia entre las metas nutricionales de las personas y sus elecciones alimentarias".
+https://img.shields.io/badge/estado-finalizado-green
+https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500
+
+## Índice
+
+* Descripción del proyecto.
+* Funciones principales.
+* Tecnologías utilizadas.
+* Entidad desarrolladora.
+
+## Descripción del proyecto 💬
+
+Repositorio del proyecto académico de Rocío París para la asignatura Proyecto Final. Producto Mínimo Viable (MVP) de Plan&Listas, una aplicación móvil para la planificación de comidas que evalúa la coherencia, expresada del 0% al 100%, entre las metas nutricionales de las personas y sus elecciones alimentarias.
 
 Para ver el código fuente, ver rama "master".
+
+## Funciones principales 🛠️
+
+* Búsqueda y visualización de recetas: Tanto personas usuarias autentificadas como no autentificadas podrán buscar recetas y visualizar detalles de las mismas, incluyendo título, fotografía, ingredientes (con cantidades y unidades de medida) y procedimiento.
+* Completado de cuestionario: Opcionalmente, luego del primer inicio de sesión, las personas usuarias podrán contestar un cuestionario en donde indiquen sus metas nutricionales y/o nutrientes que no puedan consumir.
+* Agregado de recetas: Las personas usuarias autentificadas podrán agregar sus recetas desde la pantalla "Mis recetas", incluyendo título, ingredientes, procedimiento y, opcionalmente, una imagen.
+* Planificación de comidas: Las personas usuarias autentificadas podrán planificar tanto las comidas que presenta la aplicación, como aquellas que hayan agregado. En caso de que hayan indicado sus metas nutricionales en el cuestionario, al planificar, la aplicación indicará qué coherencia tiene esa planificación que están intentado hacer con sus objetivos.
+* Obtención de listas de compras: Las personas usuarias podrán obtener y consultar listas de compras basadas en sus planificaciones, hechas automáticamente por la aplicación.
+
+## Tecnologías utilizadas ⚙️
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10
+https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png
+https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png
+
+## Entidad desarrolladora 👩‍💻
+
+Lic. Rocío París
