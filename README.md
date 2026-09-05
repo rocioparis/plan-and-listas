@@ -2,7 +2,7 @@
 <img width="1365" height="181" alt="Aplicación móvil para la planificación de comidas que evalúa la coherencia entre las metas nutricionales de las personas y sus elecciones alimentarias(1)" src="https://github.com/user-attachments/assets/0eb5269e-1580-440f-8698-7595eaa3c6d3" />
 
 <img src="https://img.shields.io/badge/estado-finalizado-green"/>
-https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500
+<img src="https://img.shields.io/badge/actualiz%C3%A1ndose%20para%20la%20versi%C3%B3n%201.0-FFA500"/>
 
 ## Descripción del proyecto 💬
 
@@ -20,9 +20,9 @@ Para ver el código fuente, ver rama "master".
 
 ## Tecnologías utilizadas ⚙️
 
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10
-https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png
-https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxnib3zqjXl9as_ccR084dC5IEqQ3wZZgbbAqOXFdKCn2ZYOPtX0DsOi8&s=10"/>
+<img src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png"/>
+<img src="https://images.icon-icons.com/2415/PNG/512/postgresql_plain_wordmark_logo_icon_146390.png"/>
 
 ## Entidad desarrolladora 👩‍💻
 
